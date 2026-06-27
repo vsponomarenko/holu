@@ -20506,7 +20506,7 @@ function M_Header(_ref) {
   var handleSearch = function handleSearch(e) {
     e.preventDefault();
     if (!search.trim()) return;
-    window.location.href = "/search.html?q=".concat(encodeURIComponent(search));
+    window.location.href = "search.html?q=".concat(encodeURIComponent(search));
   };
   var menuItems = menuLinks.map(function (menuItem, i) {
     return /*#__PURE__*/react.createElement("a", {
@@ -20531,7 +20531,7 @@ function M_Header(_ref) {
   }, /*#__PURE__*/react.createElement("div", {
     className: "header-logo"
   }, /*#__PURE__*/react.createElement("a", {
-    href: "/"
+    href: "index.html"
   }, /*#__PURE__*/react.createElement("img", {
     src: footer_logo_namespaceObject,
     alt: "\u0425\u041E\u041B\u0423 \u043B\u043E\u0433\u043E\u0442\u0438\u043F",
