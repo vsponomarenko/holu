@@ -46,7 +46,7 @@ export default function M_Header({
                 <div className="header-inner">
 
                     <div className="header-logo">
-                        <a href="index.html">
+                        <a href="/holu/index.html">
                             <img
                                 src={footerlogo}
                                 alt="ХОЛУ логотип"
