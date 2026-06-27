@@ -16,7 +16,7 @@ export default function M_Header({
 
         if (!search.trim()) return;
 
-        window.location.href = `/search.html?q=${encodeURIComponent(search)}`;
+        window.location.href = `search.html?q=${encodeURIComponent(search)}`;
     };
 
     const menuItems = menuLinks.map((menuItem, i) => (
@@ -46,7 +46,7 @@ export default function M_Header({
                 <div className="header-inner">
 
                     <div className="header-logo">
-                        <a href="/">
+                        <a href="index.html">
                             <img
                                 src={footerlogo}
                                 alt="ХОЛУ логотип"
@@ -91,32 +91,32 @@ export default function M_Header({
                 </div>
 
                 <div
-    className={`mobile-nav ${isMenuOpen ? "active" : ""}`}
->
+                    className={`mobile-nav ${isMenuOpen ? "active" : ""}`}
+                >
 
-    <form
-        className="mobile-search"
-        onSubmit={handleSearch}
-    >
-        <input
-            type="text"
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-            placeholder="Поиск..."
-            className="mobile-search-input"
-        />
+                    <form
+                        className="mobile-search"
+                        onSubmit={handleSearch}
+                    >
+                        <input
+                            type="text"
+                            value={search}
+                            onChange={(e) => setSearch(e.target.value)}
+                            placeholder="Поиск..."
+                            className="mobile-search-input"
+                        />
 
-        <button
-            type="submit"
-            className="mobile-search-button"
-        >
-            Найти
-        </button>
-    </form>
+                        <button
+                            type="submit"
+                            className="mobile-search-button"
+                        >
+                            Найти
+                        </button>
+                    </form>
 
-    {menuItems}
+                    {menuItems}
 
-</div>
+                </div>
             </header>
 
             {showHero && (

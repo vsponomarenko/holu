@@ -13,9 +13,10 @@ module.exports = {
   search: './src/javascripts/search.jsx',
 },
   output: {
-    filename: '[name].js',
-    path: path.resolve('.', 'docs')
-  },
+  filename: "[name].js",
+  path: path.resolve(".", "docs"),
+  publicPath: "/holu/"
+},
   module: {
     rules: [
       {
