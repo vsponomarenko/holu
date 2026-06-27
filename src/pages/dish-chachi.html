@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Чайный пруд</title>
+        <link rel="icon" href="../images/favicon.png" type="image/png" />
+    </head>
+    <body class="articles-page">
+
+  
+  <section class="section-heading" id="haiwan">
+    <header class="site-header">
+      <div class="header-inner">
+        <div class="header-logo">
+          <a href="../index.html">
+            <img src="../images/footer-logo.png" alt="ХОЛУ логотип" class="header-logo-img" />
+          </a>
+        </div>
+
+  
+        <nav class="main-nav">
+          
+          <a href="sorts.html">сорта</a>
+          <a href="dishes.html">посуда</a>
+          <a href="articles.html">статьи</a>
+          <a href="faq.html">вопросы</a>
+        </nav>
+
+   
+        <div class="mobile-menu-toggle" id="mobileMenuToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+     
+      <div class="breadcrumbs">
+        <a href="index.html" class="breadcrumb-link">главная</a>
+        <span class="breadcrumb-sep">/</span>
+        <a href="dishes.html" class="breadcrumb-link">посуда</a>
+        <span class="breadcrumb-sep">/</span>
+        <span class="breadcrumb-current">чайный пруд</span>
+      </div>
+
+  
+      <div class="mobile-nav" id="mobileNav">
+        
+        <a href="sorts.html">сорта</a>
+        <a href="dishes.html">посуда</a>
+        <a href="articles.html">статьи</a>
+        <a href="faq.html">вопросы</a>
+      </div>
+    </header>
+  </section>
+
+ 
+  <section class="section-prototype" id="цель">
+    <div class="prototype-inner">
+      <div class="invert-two-columns-container">
+
+        <div class="column-right">
+          <h1 class="hierogliph">茶池</h1>
+          <h2 class="lower-header-title">Чайный пруд</h2>
+          <h3 class="tea-russian-name">cháchí</h3>
+          <h2 class="lower-header-title">Назначение</h2>
+          <div class="right-text">
+            <p>Функционально является аналогом чабани. Если вы не используете чабань, используйте чайный пруд — сливайте
+              в него всю лишнюю воду во время чаепития. В последние десятилетия Китай возвращается к старым традициям
+              чаепития. Снова популярны чугунные чайники для кипячения воды, в современных чайных наборах более чётко
+              видны старинные формы, тканевые и плетёные коврики стали больше, изысканней и утонченней. В том числе
+              все популярней становится заваривание с чайным прудом. Такое чаепитие, возможно, будет более возвышенным,
+              чем заваривание на чабани. Не обязательно у вас должен быть китайский чайный пруд, вокруг достаточно
+              керамических, фарфоровых тарелочек, которые прекрасно встанут на столе, заменив аутентичную посуду.</p>
+          </div>
+          <div class="right-text">
+          </div>
+        </div>
+
+        <div class="tea-hero">
+          <img src="../images/dishes/chachi.png" alt="2">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="../images/footer-logo.png" alt="ХОЛУ" />
+      </div>
+
+      <div class="footer-nav-wrapper">
+        <div class="footer-nav-links">
+          
+          <a href="sorts.html">сорта</a>
+          <a href="dishes.html">посуда</a>
+          <a href="articles.html">статьи</a>
+          <a href="faq.html">вопросы</a>
+        </div>
+
+        <div class="footer-columns">
+          <div class="footer-col">
+            <p class="footer-col-heading">кураторы</p>
+            <p>Антон Ларин</p>
+            <p>Юрий Сыров</p>
+          </div>
+          <div class="footer-col">
+            <p class="footer-col-heading">студенты</p>
+            <p>Катя Котлярова</p>
+            <p>Рита Филатова</p>
+	    <p>Лера Пономаренко</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-social">
+        <a href="https://t.me/huolutea" target="_blank" class="social-link"><img src="../images/telegram.svg"
+            alt="Telegram" style="height: 30px;" /></a>
+        <a href="https://vk.com/HOLUTEA" target="_blank" class="social-link"><img src="../images/vk.svg" alt="VK" /></a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+   
+    const menuToggle = document.getElementById('mobileMenuToggle');
+    const mobileNav = document.getElementById('mobileNav');
+
+    if (menuToggle && mobileNav) {
+      menuToggle.addEventListener('click', function () {
+        this.classList.toggle('active');
+        mobileNav.classList.toggle('active');
+        
+        if (mobileNav.classList.contains('active')) {
+          document.body.style.overflow = 'hidden';
+        } else {
+          document.body.style.overflow = '';
+        }
+      });
+
+     
+      const mobileLinks = mobileNav.querySelectorAll('a');
+      mobileLinks.forEach(link => {
+        link.addEventListener('click', function () {
+          menuToggle.classList.remove('active');
+          mobileNav.classList.remove('active');
+          document.body.style.overflow = '';
+        });
+      });
+    }
+  </script>
+
+</body>
+</html>

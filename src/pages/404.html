@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ошибка</title>
+        <link rel="icon" href="../images/favicon.png" type="image/png" />
+    </head>
+    <body>
+
+  <section class="section-hero" id="главная">
+    <img src="../images/404/fon.png" alt="404" class="hero-bg" />
+    <header class="site-header">
+      <div class="header-inner">
+        <div class="header-logo">
+          <a href="../index.html">
+            <img src="../images/footer-logo.png" alt="ХОЛУ логотип" class="header-logo-img" />
+          </a>
+        </div>
+
+        <nav class="main-nav">
+          
+          <a href="sorts.html">сорта</a>
+          <a href="dishes.html">посуда</a>
+          <a href="articles.html">статьи</a>
+          <a href="faq.html">вопросы</a>
+        </nav>
+
+        <div class="mobile-menu-toggle" id="mobileMenuToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+
+      <div class="mobile-nav" id="mobileNav">
+        
+        <a href="sorts.html">сорта</a>
+        <a href="dishes.html">посуда</a>
+        <a href="articles.html">статьи</a>
+        <a href="faq.html">вопросы</a>
+      </div>
+    </header>
+    <div class="hero-content">
+      <div class="hero-logo">
+        <img src="../images/404/404.png" alt="404" />
+      </div>
+      <p class="hero-404-subtitle">Чайная церемония переносится, приносим свои извинения!</p>
+    </div>
+  </section>
+
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <img src="../images/footer-logo.png" alt="ХОЛУ" />
+      </div>
+
+      <div class="footer-nav-wrapper">
+        <div class="footer-nav-links">
+          
+          <a href="sorts.html">сорта</a>
+          <a href="dishes.html">посуда</a>
+          <a href="articles.html">статьи</a>
+          <a href="faq.html">вопросы</a>
+        </div>
+
+        <div class="footer-columns">
+          <div class="footer-col">
+            <p class="footer-col-heading">кураторы</p>
+            <p>Антон Ларин</p>
+            <p>Юрий Сыров</p>
+          </div>
+          <div class="footer-col">
+            <p class="footer-col-heading">студенты</p>
+            <p>Катя Котлярова</p>
+            <p>Рита Филатова</p>
+	          <p>Лера Пономаренко</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-social">
+        <a href="https://t.me/huolutea" target="_blank" class="social-link"><img src="../images/telegram.svg"
+            alt="Telegram" style="height: 30px;" /></a>
+        <a href="https://vk.com/HOLUTEA" target="_blank" class="social-link"><img src="../images/vk.svg" alt="VK" /></a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+
+    const menuToggle = document.getElementById('mobileMenuToggle');
+    const mobileNav = document.getElementById('mobileNav');
+
+    if (menuToggle && mobileNav) {
+      menuToggle.addEventListener('click', function () {
+        this.classList.toggle('active');
+        mobileNav.classList.toggle('active');
+   
+        if (mobileNav.classList.contains('active')) {
+          document.body.style.overflow = 'hidden';
+        } else {
+          document.body.style.overflow = '';
+        }
+      });
+
+   
+      const mobileLinks = mobileNav.querySelectorAll('a');
+      mobileLinks.forEach(link => {
+        link.addEventListener('click', function () {
+          menuToggle.classList.remove('active');
+          mobileNav.classList.remove('active');
+          document.body.style.overflow = '';
+        });
+      });
+    }
+  </script>
+
+</body>
+</html>
