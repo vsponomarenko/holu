@@ -20531,7 +20531,7 @@ function M_Header(_ref) {
   }, /*#__PURE__*/react.createElement("div", {
     className: "header-logo"
   }, /*#__PURE__*/react.createElement("a", {
-    href: "index.html"
+    href: "/holu/index.html"
   }, /*#__PURE__*/react.createElement("img", {
     src: footer_logo_namespaceObject,
     alt: "\u0425\u041E\u041B\u0423 \u043B\u043E\u0433\u043E\u0442\u0438\u043F",
