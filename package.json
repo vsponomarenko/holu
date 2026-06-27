@@ -1,7 +1,7 @@
 {
-  "name": "bn23dz02",
+  "name": "holu",
   "version": "1.0.0",
-  "author": "Syrov Yuriy",
+  "author": "vsponomarenko",
   "license": "MIT",
   "scripts": {
     "start": "webpack serve --open --config config/webpack.dev.js",
